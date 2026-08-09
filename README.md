@@ -4,8 +4,9 @@
 ![License](https://img.shields.io/badge/license-MIT-green)
 
 A small post-processing script that turns off the heated bed a few
-minutes before your print actually finishes — no more wasted power (or
-warping risk) while the bed sits hot for 20+ minutes after the last layer.
+minutes before your print actually finishes. Handy if you print multiple
+pieces back-to-back: the bed starts cooling earlier, so it's ready to
+remove your part and start the next print sooner.
 
 It works by reading the time estimates your slicer already embeds in the
 gcode (`M73 P.. R..` or `;TIME_ELAPSED:`) and inserting an `M140 S0`
